@@ -42,7 +42,7 @@ class HandlerScoketWrapper {
     {
         $this->index = $index;
         $this->columns = implode(',', $array);
-        if (!isset($this->primary_key)) {
+        if (!isset($primary_key)) {
             $this->primary_key = HandlerSocket::PRIMARY;
         } else {
             $this->primary_key = $primary_key;
